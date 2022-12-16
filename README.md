@@ -14,5 +14,5 @@ php artisan serve
 
 ## Docs
 Api documentation: http://localhost/docs <br>
-Cbr documentation: http://www.cbr.ru/development/SXML/
+Cbr documentation: http://www.cbr.ru/development/SXML/ <br>
 Cbr currency codes: http://www.cbr.ru/scripts/XML_val.asp?d=0
