@@ -4,6 +4,8 @@ WORKDIR /var/www
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     nano \
+    zip \
+    unzip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 # Install composer

@@ -9,6 +9,7 @@ docker-compose up -d
 
 ## Box Launch 
 ```
+composer install
 php artisan serve
 ```
 

@@ -52,4 +52,18 @@ class RatesService implements RatesServiceInterface
             $percentDiff ?? null
         );
     }
+
+    /**
+     * @param string|null $value
+     * @return float|null
+     */
+    private function toFloat(?string $value): ?float
+    {
+        if (!$value) {
+            return null;
+        }
+
+        $val = str_replace(",", ".", $value);
+        return floatval($val);
+    }
 }
