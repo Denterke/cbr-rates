@@ -8,5 +8,9 @@ use Illuminate\Http\Client\Response;
 
 interface CbrBridgeInterface
 {
+    /**
+     * @param RateQueryEntity $entity
+     * @return PromiseInterface|Response
+     */
     public function getXmlRates(RateQueryEntity $entity): PromiseInterface|Response;
 }

@@ -76,13 +76,4 @@ abstract class Bridge
     {
         return $request;
     }
-
-    /**
-     * @param CacheStorageInterface $storage
-     * @return CacheStrategyInterface
-     */
-    protected function getCacheStrategy(CacheStorageInterface $storage): CacheStrategyInterface
-    {
-        return new PrivateCacheStrategy($storage);
-    }
 }

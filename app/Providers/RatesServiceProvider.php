@@ -10,7 +10,7 @@ use Illuminate\Support\ServiceProvider;
 class RatesServiceProvider extends ServiceProvider
 {
     /**
-     * Register services.
+     * Register RatesServiceProvider service.
      *
      * @return void
      */

@@ -11,7 +11,7 @@ use Illuminate\Support\ServiceProvider;
 class BridgeServiceProvider extends ServiceProvider
 {
     /**
-     * Register services.
+     * Register RatesServiceProvider service.
      *
      * @return void
      */

@@ -12,7 +12,7 @@ use Illuminate\Support\ServiceProvider;
 class ResponseServiceProvider extends ServiceProvider
 {
     /**
-     * Register services.
+     * Register ResponseServiceProvider service.
      *
      * @return void
      */
@@ -22,7 +22,7 @@ class ResponseServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap services.
+     * Bootstrap ResponseServiceProvider service.
      *
      * @return void
      */
