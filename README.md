@@ -2,6 +2,7 @@
 Api provides getting data of currencies on any date
 
 ## Docker Launch
+From CI folder
 ```
 docker-compose up -d
 ```
