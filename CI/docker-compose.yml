@@ -1,0 +1,29 @@
+version: "3.7"
+volumes:
+  app-volume:
+services:
+  app:
+    build:
+      context: ../
+      dockerfile: CI/Dockerfile
+    image: "cbr-rates-image"
+    container_name: "cbr-rates-app"
+    restart: unless-stopped
+    volumes:
+      - app-volume:/var/www
+      - ./laravel/logs:/var/www/storage/logs
+  nginx:
+    image: nginx:latest
+    container_name: "cbr-rates-nginx"
+    restart: unless-stopped
+    volumes:
+      - app-volume:/var/www
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx/
+    expose:
+      - 80
+    ports:
+      - 80:80
+    command: /bin/bash -c "nginx -g 'daemon off;'"
+    links:
+      - app
